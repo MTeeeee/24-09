@@ -1,0 +1,93 @@
+/* 
+
+Selektor {
+Eigenschaft: Wert;
+}
+
+*/
+
+/* 
+()
+[]
+{} geschwungene klammern curky braces
+<>
+*/
+
+/* 
+
+element // h1 p li
+.class
+#id
+
+*/
+
+* {
+    background-color: pink;
+}
+
+h1 {
+  color: crimson;
+  font-size: large;
+}
+
+
+li {
+    color: green !important;
+}
+
+li {
+    color: aqua;
+}
+
+ul {
+    font-style: italic;
+}
+
+ul#toplist { /* quasi nur #toplist */
+    list-style-type: none;
+}
+
+/* 
+    <ul id="toplist">
+        <li id="t1">Haus</li>
+        <li id="t2"><p>Maus</p></li>
+        <li id="t3">Wassermelone</li>
+    </ul>
+
+*/
+ul #toplist { /* das #toplist in ul*/
+    list-style-type: none;
+}
+/* 
+    <ul>
+        <li id="toplist">Haus</li>
+        <li id="t2"><p>Maus</p></li>
+        <li id="t3">Wassermelone</li>
+    </ul>
+
+*/
+ul, #toplist { /* ul und #toplist */
+    list-style-type: none;
+}
+/* 
+    <ul>
+        <li id="id">Haus</li>
+        <li id="t2"><p>Maus</p></li>
+        <li id="t3">Wassermelone</li>
+    </ul>
+    <p id=""toplist>ahdal</p>
+
+*/
+
+/* multiple elemente mit Komma */
+#toplist, #bottomlist {
+    list-style-type: none;
+}
+
+/* element1 element2 {} sofern element2 in element1 vorhanden ist*/
+ul p {
+    font-size: small;
+}
+
+/* element1 > element2  element1 das umittelbar ein element 2 über sich*/
+/* element1 + element 2  element 2 unittelbar nach element 1*/
