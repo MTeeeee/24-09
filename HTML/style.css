@@ -1,0 +1,33 @@
+
+* {
+ background-color: blueviolet;
+}
+
+body {
+background-color: brown;
+}
+
+p {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    color: aquamarine;
+}
+
+#dank {
+    font-size: larger;
+}
+
+#coolText {
+    color: red;
+}
+
+.ungerade {
+    background-color: chocolate;
+}
+
+.gerade {
+    background-color: blue;
+}

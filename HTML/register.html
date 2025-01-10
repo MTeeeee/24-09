@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<header><a href="index.html">home</a></header>
+
+<body>
+    <form action="https://unser_shop_backend/register" method="post">
+    <h1>Registrieren</h1>
+
+
+    <label for="vorname">Vorname:</label>
+    <p><input type="text" name="vorname" id="vorname" placeholder="z.B. Max"></p>
+    <label for="nachname">Nachname:</label>
+    <p><input type="text" name="nachname" id="nachname" placeholder="z.B. Mustermann"></p>
+    <label for="email">Email:</label>
+    <p><input type="email" name="email" id="email" placeholder="z.B."></p>
+    <label for="passwort">Passwort:</label>
+    <p><input type="password" name="passwort" id="passwort" placeholder="z.B."></p>
+    <label for="geburtstag">Geburtstag:</label>
+    <p><input type="date" name="geburtstag" id="geburtstag" placeholder="z.B."></p>
+
+    <!-- Radio -->
+    <h5>Zahlungsmethode: <br></h5>
+    <input type="radio" name="zahlungsmethode" id="kreditkarte" value="Kreditkarte"><label for="kreditkarte">Kreditkarte</label><br>
+    <input type="radio" name="zahlungsmethode" id="paypal" value="Paypal"><label for="paypal">Paypal</label><br>
+    <input type="radio" name="zahlungsmethode" id="klarna" value="Klarna"><label for="klarna">Klarna</label><br>
+    <br>
+    <!-- Checkbox -->
+    <input type="checkbox" id="geschenk" name="geschenk"><label for="geschenk">Als Geschenk verpacken</label><br>
+    <input type="checkbox" id="agb" name="agb" required><label for="agb">AGB gelesen 😉</label>
+    <br>
+    <br>
+
+    <!-- Drop Down -->
+    <h5>Lieferant</h5>
+    <select name="versand" id="versand">
+        <option value="dhl">DHL</option>
+        <option value="hermes">Hermes</option>
+        <option value="dpd">DPD</option>
+    </select><br><br>
+
+    <!-- Kommentar -->
+     <label for="kommentar">Kommentar</label><br>
+     <textarea name="kommentar" id="kommentar" rows="10" cols="50">
+Hier können Sie Ihre wünsche nennen.
+     </textarea><br>
+
+     <!-- Datei Hochladen -->
+
+    <label for="anhang">Laden sie Ihr Logo hoch</label>
+    <input type="file" id="anhang" name="anhang"><br>
+
+    <!-- Versteckte -->
+     <input type="hidden" id="nutzerId" value="#37628">
+
+    <!-- Buttons -->
+    <input type="submit" value="Registrieren">
+    <input type="reset" value="Reset">
+
+    </form>
+    
+</body>
+</html>
+
+
+<!-- 
+
+http://127.0.0.1:3000/register.html
+?vorname=max
+&nachname=mus
+&email=max%40mus.de
+&passwort=asadd
+&geburtstag=2025-01-14
+&zahlungsmethode=Kreditkarte
+&agb=on
+
+-->
+
