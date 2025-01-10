@@ -21,9 +21,9 @@ element // h1 p li
 
 */
 
-* {
+/* * {
     background-color: pink;
-}
+} */
 
 h1 {
   color: crimson;
@@ -91,3 +91,42 @@ ul p {
 
 /* element1 > element2  element1 das umittelbar ein element 2 über sich*/
 /* element1 + element 2  element 2 unittelbar nach element 1*/
+
+
+.blau {
+    background-color: blue;
+}
+
+.gruen {
+    background-color: green;
+}
+
+.ungerade {
+    font-family: Arial
+}
+
+
+
+#p1 {
+    color: #f205b3;
+    background-color: rgb(0,0,0,0.2);
+    border: 0.5px solid;
+    border-color: blue;
+    /* border-style: solid; */
+
+    font-family: "Jersey 10";
+
+}
+
+#p2 {
+    color: #F205B3;
+    background-color: black
+}
+
+
+/* body {
+    background-image: url("./image.png");
+    background-repeat: no-repeat;
+    background-position: 50%, 50%;
+} */
+
