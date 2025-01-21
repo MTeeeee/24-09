@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Manipulation with JavaScript</title>
+  </head>
+
+  <body>
+
+    <div class="content" id="content_first">
+      <p>The dynamic content goes here</p>
+    </div>
+    <!-- #content_first -->
+
+    <div class="content" id="content_second">
+      <p>Second section</p>
+    </div>
+    <!-- #content_second -->
+
+    <div class="content" id="content_third">
+      <p>Third section</p>
+    </div>
+    <!-- #content_third -->
+
+
+
+    <script>
+
+        let first_div = document.getElementsByClassName("content")[0];
+        let second_div = document.getElementsByClassName("content")[1];
+
+        first_div.innerHTML = "Helloooo from JS :P"
+        second_div.innerHTML = "Helloooo from JS :P"
+
+
+        let div = document.getElementsByClassName("content");
+        console.log(div)
+        // div = [first_div, second_div]
+        for (element of div){
+            element.innerHTML = "trololol"
+        }
+
+        let third_div = document.getElementById("content_third")
+        third_div.innerHTML = "By ID"
+
+        document.querySelector("#content_first").innerHTML = "with querySelector"
+        document.querySelectorAll()
+
+    </script>
+  </body>
+
+</html>
