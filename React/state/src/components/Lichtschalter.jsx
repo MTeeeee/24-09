@@ -7,15 +7,32 @@ function Lichtschalter() {
   const lightOn = () => {
     setLight("An")
   }
+
   const lightOff = () => {
     setLight("Aus")
   }
 
+  const lightSwitch = () => {
+
+    light == "An" ? setLight("Aus") : setLight("An")
+
+    // if (light == "An") {
+    //   setLight("Aus")
+    // } else {
+    //   setLight("An")
+    // }
+
+  }
+
+
+
   return (
-    <div>Lichtschalter
-        <p>Das Licht ist: {light}</p>
-        <button onClick={lightOn}>💡</button>
-        <button onClick={lightOff}>☠️</button>
+    <div>
+      <h2>Lichtschalter</h2>
+      <p>Licht ist: {light}</p>
+      <button onClick={lightOn}>An</button>
+      <button onClick={lightOff}>Aus</button>
+      <button onClick={lightSwitch}>💡</button>
     </div>
   )
 }
